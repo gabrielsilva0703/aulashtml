@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>formulario 3</title>
+</head>
+
+<body>
+
+    <form method="post" id="fcontato" action="">
+
+        <fieldset>
+            <label for="nome">nome</label>
+            <input type="text" required>
+            <br>
+            <label for="E-mail">E-mail </label>
+            <br>
+            <input type="text" required>
+            <br><br>
+            <label for="contato">contato</label>
+            <input type="number" required>
+
+            <P>Lista de carros</P>
+
+            <select name="lista de carros" id="Lista de carros">
+                <option disabled selected hidden>selecione</option>
+                <option value="Volkswagen nivus">Volkswagen nivus</option>
+                <option value="fiat toro">Fiat Toro</option>
+                <option value="Land rover evoque">Evoque</option>
+                <option value="|Mercedes GLE">Mercedes GLE</option>
+                <option value="Volkswagen Jetta">Volkswagen Jetta</option>
+            </select>
+            <p>Região</p>
+            <input autocomplete="on" list="Regiao" placeholder="Ex: São paulo">
+            <datalist id="Regiao">
+                <option value="São Paulo"></option>
+                <option value="Itapecirica da Serra"></option>
+                <option value="Juquitiba"></option>
+            </datalist>
+    </form>
+    <br>
+    <input type="range" name="" id="">
+    <br>
+    <label for="feedback">Deixe o seu feedback aqui</label>
+    <textarea name="" id="feedback" cols="30" rows="10" required placeholder="Escreva aqui" maxlength="120"
+        minlength="60"></textarea>
+    <br>
+    <input type="submit" value="Enviar">
+    </fieldset>
+
+</body>
+
+</html>
