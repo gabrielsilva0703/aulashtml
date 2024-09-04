@@ -1,6 +1,6 @@
 *{
-    margin: ;
-    padding: ;
+    margin: 0 ;
+    padding: 0 ;
     box-sizing: border-box;
     }
     
@@ -11,9 +11,7 @@
     
     .interface{
         max-width: 1280px;
-        margin: 0 auto;
-        
-        
+        margin: 0 auto; 
         }
     
     header {
@@ -25,7 +23,25 @@ header > .interface{
 display: flex;
 align-items: center;
 justify-content: space-between;
+}
+
+header a{
+color: white;
+}
+
+header nav ul{
+list-style-type: none;
+
+}
+header nav ul li{
+display: inline-block;
 
 
+}
 
+header .btn-button{
+padding: 10px 40px;
+font-size: 17px;
+font-weight: 600;
+background-color: red;
 }
