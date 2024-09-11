@@ -1,0 +1,19 @@
+* {
+font-size: 25px;
+
+}
+
+ul {
+    font-size: 2rem;
+}
+
+li{
+    font-size: 3em;
+}
+
+h1{
+    font-size: calc( 5rem - 5px) ;
+}
+p{ font-size: 15px;
+    
+}
