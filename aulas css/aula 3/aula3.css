@@ -1,0 +1,24 @@
+h1{
+    text-align: center;
+    color: #D90404;
+    font-weight: 700
+    ;
+}
+
+p{
+text-align: center ;
+font-size: 18px;
+color: #D9042B;
+font-style: italic;
+
+}
+body{
+    background-color:black
+}
+img{
+ filter: drop-shadow(10PX 20PX 30PX #F299A9);
+
+
+}
+
+
