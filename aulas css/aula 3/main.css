@@ -1,0 +1,11 @@
+p{
+    color: cornflowerblue;
+    font-size: medium;
+    font-style: unset;
+}
+.prg{
+    color: chartreuse;
+    font-style: italic;
+    text-align: right;
+    padding: 50px;
+}

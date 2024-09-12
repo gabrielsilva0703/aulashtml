@@ -1,11 +1,36 @@
-p{
-    color: cornflowerblue;
-    font-size: medium;
-    font-style: unset;
+.ti{
+color: chartreuse;
+font-style: italic;
 }
-.prg{
-    color: chartreuse;
+
+body{
+    background-color:black ;
+
+/* .class
+# id */ 
+
+}
+
+.so{
     font-style: italic;
-    text-align: right;
-    padding: 50px;
+}
+
+.cor{
+    color: crimson;
+}
+
+#ola{
+color: chartreuse;
+
+}
+#alo{
+    color: orangered;
+}
+
+#oi{
+color: fuchsia;
+}
+
+.fundo{
+    background-color: whitesmoke;
 }
