@@ -1,0 +1,12 @@
+div{
+    background-color: black;
+    color: white;
+}
+.container{
+    border: solid red;
+    overflow: auto ;
+}
+img{
+    float: right;
+    border: solid red;
+}

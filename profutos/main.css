@@ -1,0 +1,39 @@
+body{
+text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #BF0413;
+    background-color: #ffffff;
+}
+header{
+color: #090909;
+text-align: center;
+}
+nav{
+    margin: 0;
+    padding: 0;
+}
+nav ul{
+list-style: none;
+padding: 0;
+
+}
+
+img{
+    max-width: 300px;
+    height: auto;
+}
+
+    .preco{
+        color: rgb(0, 0, 0);
+    }
+    footer{
+        color: #f70c0c;
+    }
+    .imgfundo{
+        background-image: url(./bandeira.png    );
+        background-repeat: no-repeat;
+        padding: 20px;
+        text-align: center;
+    }
