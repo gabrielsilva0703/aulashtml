@@ -1,0 +1,20 @@
+div {
+    height: 250px;
+    width: 250px;
+    border: dotted 1px;
+    margin: 0px;
+}
+
+.box1 {
+    
+    box-sizing: content-box;
+    font-size: 2em;
+   border: dotted 10px fuchsia;
+}
+
+.box2 {
+    
+    box-sizing: border-box;
+    font-size: 2em;
+    border: dotted 10px red;
+}
