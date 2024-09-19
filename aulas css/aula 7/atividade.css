@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 62,5px;
+}
+h1:hover{
+    background-color: rgb(194, 183, 80);
+}
+
+p:first-child{ 
+color: blue;
+
+}

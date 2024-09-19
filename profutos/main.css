@@ -34,6 +34,10 @@ img{
     .imgfundo{
         background-image: url(./bandeira.png    );
         background-repeat: no-repeat;
-        padding: 20px;
-        text-align: center;
+        padding: 60px;
+        background-position: center;
+        height: 50;
+    }
+    h1{
+        color: white;
     }

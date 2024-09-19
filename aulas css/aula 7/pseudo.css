@@ -1,0 +1,11 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 62,5px;
+}
+h1:hover{
+    background-color: khaki;
+}
+p::before{
+    color: blue;
+}
