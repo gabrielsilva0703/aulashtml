@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+
+h1{
+    color: fuchsia;
+}
+    
+
+
+@media screen and (max-width:320px) {
+    /*enquanto nao for maior que 320x */
+    h1{
+        color: red;
+        font-size: 2.3rem;
+    }
+}
+@media print and (max-width: 1200px) {
+h1{
+    color: darkblue;
+}
+
+h2{
+    color:hotpink 
+}
+}
+
+@media (max-width:481px) {
+    h1{
+        color: greenyellow;
+        font-size: larger;
+    }
+}
+
+@media (min-width:709px) {
+    h4{
+        background-color: hotpink;
+        color: black;
+        text-align: center;
+    }
+}
+
+@media (min-width:1025px) and (max-width:1200px){ 
+    h2, h3, h4, h5{
+        display: none;
+    }
+}

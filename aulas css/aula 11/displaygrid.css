@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 800px;
+    width: 800px;
+    column-gap: 10px;
+    border: solid 1px silver;
+    grid-template-areas:
+        "box1 box1 box1"
+        "box2 box2 box2"
+        "box3 box3 box3"
+    ;
+
+    row-gap: 35px;
+    column-gap: 10px;
+    gap: 10px 35px;
+}
+
+.box1 {
+    background-color: darkblue;
+    
+}
+
+.box2 {
+    background-color: blue;
+    
+}
+
+.box3 {
+    background-color: lightblue;
+   
+}

@@ -1,0 +1,73 @@
+.container {
+    text-align: center;
+    height: 800px;
+    width: 800px;
+    margin: 25px auto;
+    background-color: silver;
+    display: flex;
+    /* direction: rtl; */
+
+    /* Aliamento main axis (padrão) */
+    /* justify-content: end */
+    /* justify-content: space-evenly */
+    /* justify-content: space-between */
+    /* justify-content: space-around; */
+    /* justify-content: center; */
+    /* justify-content: flex-start; */
+
+    /* Controla quebra de elementos no container */
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; */
+
+    /* flex-flow= flex-direction + flex-wrap */
+    /* flex-flow: column-reverse nowrap; */
+
+    /* Aliamento com o cross axis */
+    /* align-items: baseline; */
+    /* align-items: center; */
+    /* align-items: end; */
+    /* align-items: first baseline; */
+    /* align-items: flex-end; */
+    /* align-items: flex-start; */
+    /* align-items: last baseline; */
+    /* align-items: ; */
+}
+
+.boxc1 {
+    border: solid 1px;
+     height: 100px;
+    width: 90px;  
+    margin: 20px;
+    border: solid 1px;
+    background-color: greenyellow;
+    /* order: 1; */
+    /* flex-grow: 1; */
+    /* flex-shrink: 1; */
+}
+
+
+.boxc2 {
+    border: solid 1px;
+    height: 100px;
+    width: 90px; 
+    margin: 20px;
+    border: solid 1px;
+    background-color: red;
+    /* order: 3 ; */
+    /* flex-grow: 1; */
+    /* flex-shrink: 2; */
+}
+
+
+.boxc3 {
+    border: solid 1px;
+     height: 100px;
+    width: 90px; 
+    margin: 20px;
+    border: solid 1px;
+    background-color: blue;
+    /* order: 2; */
+    /* flex-grow: 1; */
+    /* flex-shrink: 1; */
+}

@@ -1,0 +1,22 @@
+.container {
+    width: 300px; /* largura do contêiner */
+    height: 400px; /* altura do contêiner */
+    overflow: hidden; /* esconde a parte da imagem que sai do contêiner */
+    position: relative; /* necessário para posicionar a imagem */
+    border: 2px solid #ccc; /* borda do contêiner (opcional) */
+}
+
+.imagem {
+    position: absolute; /* permite o deslocamento da imagem */
+    top: 0; /* posição inicial */
+    transition: top 0.5s; /* animação suave ao mudar a posição */
+}
+
+.container>img:hover{
+    animantion: movimento 1.5% /* desloca a imagem para baixo ao passar o mouse */
+    /* ajusta para não aparecer fora do contêiner */
+}
+
+@keyframes movimento{
+
+}
