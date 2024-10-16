@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+
+
+// Faça um programa para conferir sua idade. Se a idade for menor do que 18 anos,
+// exiba uma mensagem informando que o usuário é menor de idade. Se a idade for
+// igual ou maior do que 18 anos e menor do que 60 anos, exiba uma mensagem
+// informando que o usuário é adulto. Se a idade for igual ou maior do que 60 anos,
+// exiba uma mensagem informando que o usuário é idoso. 
+
+function conferirIdade(idade) {
+    if (idade < 18) {
+        console.log("Você é menor de idade.");
+    } else if (idade < 60) {
+        console.log("Você é adulto.");
+    } else {
+        console.log("Você é idoso.");
+    }
+}
+
+const idade = parseInt(prompt("Digite sua idade: "));
+conferirIdade(idade);
+
+
+
+
+
+
+
+// Faça um programa que teste a idade do usuário. Se a idade digitada for maior ou
+// igual a 18, exiba a mensagem "Você pode dirigir". Caso contrário, exiba a mensagem
+// "Você ainda não pode dirigir". 
+
+
+function podeDirigir(idade) {
+    if (idade >= 18) {
+        console.log("Você pode dirigir.");
+    } else {
+        console.log("Você ainda não pode dirigir.");
+    }
+}
+
+const idade = parseInt(prompt("Digite sua idade: "));
+podeDirigir(idade);
+
+// Faça um programa que peça ao usuário para digitar um número inteiro. Se o número
+// for positivo, exiba uma mensagem informando que o número é positivo. Se o
+// número for negativo, exiba uma mensagem informando que o número é negativo.
+// Se o número for igual a zero, exiba uma mensagem informando que o número é zero.
+// (Aplicar no Console).
+
+
+
+function verificarNumero(num) {
+    if (num > 0) {
+        console.log("O número é positivo.");
+    } else if (num < 0) {
+        console.log("O número é negativo.");
+    } else {
+        console.log("O número é zero.");
+    }
+}
+
+const numero = parseInt(prompt("Digite um número inteiro: "));
+verificarNumero(numero);
+
+
+// Atividades relacionais: crie um programa que solicite ao usuário que digite a sua
+// altura em metros e o seu peso em quilogramas. Em seguida, o programa deve
+// calcular o índice de massa corporal (IMC) do usuário usando a fórmula IMC = peso /
+// altura*2 e verificar se o IMC está dentro do intervalo saudável de 18,5 a 24,9. O
+// programa deve imprimir na tela se o IMC está dentro do intervalo saudável ou não. 
+// 
+
+function calcularIMC(peso, altura) {
+    const imc = peso / (altura * altura);
+    if (imc >= 18.5 && imc <= 24.9) {
+        console.log("Seu IMC está dentro do intervalo saudável.");
+    } else {
+        console.log("Seu IMC não está dentro do intervalo saudável.");
+    }
+}
+
+const peso = parseFloat(prompt("Digite seu peso em kg: "));
+const altura = parseFloat(prompt("Digite sua altura em metros: "));
+calcularIMC(peso, altura);
+
+
+
+// Crie um programa que pergunte ao usuário um número de 1 a 7 e exiba o dia da
+// semana correspondente.
+
+
+function diaDaSemana(dia) {
+    switch (dia) {
+        case 1: return "Domingo";
+        case 2: return "Segunda-feira";
+        case 3: return "Terça-feira";
+        case 4: return "Quarta-feira";
+        case 5: return "Quinta-feira";
+        case 6: return "Sexta-feira";
+        case 7: return "Sábado";
+        default: return "Dia inválido";
+    }
+}
+
+const dia = parseInt(prompt("Digite um número de 1 a 7: "));
+console.log(diaDaSemana(dia));
+
+
+
+// Escreva um programa que classifique a idade de uma pessoa em diferentes
+// categorias: criança, adolescente, adulto e idoso
+
+
+
+function classificarIdade(idade) {
+    if (idade < 12) {
+        console.log("Você é criança.");
+    } else if (idade < 18) {
+        console.log("Você é adolescente.");
+    } else if (idade < 60) {
+        console.log("Você é adulto.");
+    } else {
+        console.log("Você é idoso.");
+    }
+}
+
+const idade = parseInt(prompt("Digite sua idade: "));
+classificarIdade(idade);
+
+
+
+// Implemente um programa que realiza operações matemáticas básicas (adição,
+// subtração, multiplicação e divisão) com base na escolha do usuário.
+
+
+function calcular(op, a, b) {
+    switch (op) {
+        case 1: return a + b;
+        case 2: return a - b;
+        case 3: return a * b;
+        case 4: return b !== 0 ? a / b : "Erro: divisão por zero";
+        default: return "Operação inválida";
+    }
+}
+
+console.log("Escolha uma operação:");
+console.log("1: Adição");
+console.log("2: Subtração");
+console.log("3: Multiplicação");
+console.log("4: Divisão");
+const op = parseInt(prompt("Digite o número da operação: "));
+const a = parseFloat(prompt("Digite o primeiro número: "));
+const b = parseFloat(prompt("Digite o segundo número: "));
+const resultado = calcular(op, a, b);
+console.log("Resultado:", resultado);
+
+// 8. Aplicando desconto em produtos
+
+
+
+function aplicarDesconto(codigo, preco) {
+    let desconto;
+    switch (codigo) {
+        case "DESC1": desconto = 0.05; break;
+        case "DESC2": desconto = 0.10; break;
+        case "DESC3": desconto = 0.15; break;
+        case "DESC4": desconto = 0.20; break;
+        case "DESC5": desconto = 0.25; break;
+        default: console.log("Erro: cupom inválido."); return;
+    }
+    
+    const precoComDesconto = preco * (1 - desconto);
+    console.log(`Código promocional: ${codigo}, Desconto: ${desconto * 100}%`);
+    console.log(`Preço original: R$ ${preco.toFixed(2)}, Preço com desconto: R$ ${precoComDesconto.toFixed(2)}`);
+}
+
+const codigo = prompt("Digite o código promocional: ");
+const preco = parseFloat(prompt("Digite o preço do produto: R$ "));
+aplicarDesconto(codigo, preco);
+
+</script>
+</body>
+</html>
