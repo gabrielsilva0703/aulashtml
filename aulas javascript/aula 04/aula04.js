@@ -1,9 +1,4 @@
-//if = ok
-//
-
-let idade = 19
-if (idade >=16) {
-    console.log("você pode votar");
-}
-
-console.log("fim.");
+if (idade = 18) {
+    (`voce é maior de idade ${idade >= 18 } `)
+    console.log("Você é adulto");
+}{    else if (idade >= 18 && idade < 60) }
