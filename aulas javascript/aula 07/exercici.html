@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+   
+    function calcularIMC(altura, peso) {
+        let peso = Number(prompt("Digite seu peso em kg:"));
+    let altura = Number(prompt("Digite sua altura em metros:"));
+        let imc = peso/ (altura*altura )
+
+
+
+    if (imc < 16.9) {
+       alert(`você esta MUITO abaixo do peso${imc.toFixed(2)}`)       
+    } else if (imc >= 18.9) {
+        alert(`você esta abixo do peso ${imc.toFixed(2)}`) 
+    } else if (imc >= 18.4) {
+        alert(`você esta no peso normal${imc.toFixed(2)}`) 
+    } else if (imc >= 24.9) {
+        alert(`você esta acima do peso ${imc.toFixed(2)}`) 
+    } else if (imc >= 34.9) {
+        alert(`você esta com sobrepeso${imc.toFixed(2)}`) 
+    }  else if (imc >= 40){
+        alert(`você esta com obeso${imc.toFixed(2)}`) 
+    }
+
+    
+
+    alert(`IMC: ${imc.toFixed(2)}\nFaixa de Peso: ${faixaDePeso}`);
+}
+
+
+calcularIMC(altura, peso);
+
+    </script>
+</body>
+</html>
