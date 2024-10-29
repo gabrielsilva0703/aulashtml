@@ -1,22 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt=br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>metdos strigns</title>
-</head>
-<body>
+  </head>
+
+  <body>
+    <video
+      class="w-full h-auto"
+      preload="metadata"
+      src="https://player.vimeo.com/progressive_redirect/playback/938226648/rendition/1080p/file.mp4?loc=external&amp;signature=b1d907631c774c4dba6d9b4530f6db8ea5be4d9e5225df477b2b16dba0e080fb"
+      data-src="https://player.vimeo.com/progressive_redirect/playback/938226648/rendition/1080p/file.mp4?loc=external&amp;signature=b1d907631c774c4dba6d9b4530f6db8ea5be4d9e5225df477b2b16dba0e080fb"
+      muted=""
+      loop=""
+      playsinline=""
+      autoplay=""
+      poster="https://i.vimeocdn.com/custom_asset/21a684b9352e090b70ace38910e58e70"
+      data-airgap-id="55"
+    ></video>
+
     <script>
-        let nome = prompt(`qual o seu nome`)
+      let nome = prompt(`qual o seu nome`);
 
-let estamatricula = prompt(`ESta matriculado em algun curso (SIM - NÃO)`);
+      let estamatricula = prompt(`ESta matriculado em algun curso (SIM - NÃO)`);
 
-let re = estamatricula.tolowerCase() == `SIM` ? `Aluno possui R.A` : `Aluno não possui R.A. `
+      let re =
+        estamatricula.tolowerCase() == `SIM`
+          ? `Aluno possui R.A`
+          : `Aluno não possui R.A. `;
 
-// estamatricula.toLowerCase()
-// estamatricula.toUpperCase()
+      // estamatricula.toLowerCase()
+      // estamatricula.toUpperCase()
 
-alert( `o jovem ${re}`)
+      alert(`o jovem ${re}`);
     </script>
-</body>
+  </body>
 </html>

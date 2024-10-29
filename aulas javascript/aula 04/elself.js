@@ -10,5 +10,4 @@ if (media >=7 && faltas >=5 ) {
     console.log("reprovado");
 }
 
-
 console.log("Fim.");
