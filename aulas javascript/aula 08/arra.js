@@ -8,3 +8,10 @@ console.log(3);
 console.log(4);
 console.log("=========================================");
  
+
+let metodopop = nomes.pop()
+console.log(nomes);
+console.log(metodopop);
+console.log("=========================================");
+
+nomes.push
