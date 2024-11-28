@@ -65,19 +65,32 @@ div.txt-topo-site {
 }
 
 /* Estilo do tema claro */
+/* Estilo do tema claro */
 body {
     background-color: white;
     color: black;
     font-family: Arial, sans-serif;
     transition: all 0.3s ease;
-  }
-  
-  .container {
+}
+
+nav {
+    background-color: #f8f8f8;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.container {
     text-align: center;
     padding: 50px;
-  }
-  
-  button {
+}
+
+button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
@@ -86,23 +99,32 @@ body {
     color: white;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background-color: #0056b3;
-  }
-  
-  /* Estilo do tema escuro */
-  body.dark-theme {
+}
+
+/* Estilo do tema escuro */
+body.dark-theme {
     background-color: #333;
     color: white;
-  }
-  
-  body.dark-theme button {
-    background-color: #28a745;
-  }
-  
-  body.dark-theme button:hover {
-    background-color: #218838;
-  }
+}
+
+body.dark-theme nav {
+    background-color: #333;  /* Navbar escura */
+}
+
+body.dark-theme nav a {
+    color: white;  /* Links da navbar no tema escuro */
+}
+
+body.dark-theme button {
+    background-color: #ff4500; /* Cor diferente para o botão no tema escuro */
+}
+
+body.dark-theme button:hover {
+    background-color: #ff6347; /* Cor do botão ao passar o mouse no tema escuro */
+}
+
   
